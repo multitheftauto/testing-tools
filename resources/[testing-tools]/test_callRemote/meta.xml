@@ -1,0 +1,17 @@
+<!--
+Copyright 2023 Multi Theft Auto
+Use of this source code is governed by the license that can be
+found in the LICENSE file.
+-->
+
+<meta>
+	<meta author="Multi Theft Auto" name="test_callRemote" type="script" version="1.2.0" />
+
+	<min_mta_version server="1.5.3-9.11270" />
+
+	<script src="s_test_callRemote.lua" />
+
+	<aclrequest>
+		<right access="true" name="function.callRemote" />
+	</aclrequest>
+</meta>

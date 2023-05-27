@@ -1,0 +1,32 @@
+# Copyright 2023 Multi Theft Auto
+# Use of this source code is governed by the license that can be
+# found in the LICENSE file.
+
+# This GitHub Actions workflow is used to deploy curl-test-endpoint to
+# Cloudflare Workers. The source code for curl-test-endpoint can be found in the
+# /misc/curl-test-endpoint/ directory in this code repository.
+
+name: Deploy curl-test-endpoint
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v3
+      - name: Publish
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          # Directory to run deployment from
+          workingDirectory: ./misc/curl-test-endpoint
+
+          # The ID of the Cloudflare account to deploy to
+          accountId: ${{ secrets.CURL_TEST_ENDPOINT_DEPLOY_CF_ACCOUNT_ID }}
+
+          # A restricted API token for the account
+          apiToken: ${{ secrets.CURL_TEST_ENDPOINT_DEPLOY_CF_API_TOKEN }}

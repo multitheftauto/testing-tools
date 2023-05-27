@@ -1,0 +1,8 @@
+# Copyright 2023 Multi Theft Auto
+# Use of this source code is governed by the license that can be
+# found in the LICENSE file.
+
+name = "curl-test-endpoint"
+workers_dev = true
+main = "index.js"
+compatibility_date = "2023-05-27"

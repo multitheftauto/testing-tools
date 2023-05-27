@@ -1,0 +1,21 @@
+<!--
+Copyright 2023 Multi Theft Auto
+Use of this source code is governed by the license that can be
+found in the LICENSE file.
+-->
+
+<meta>
+	<meta author="Multi Theft Auto" name="test_json" type="script" version="1.1.0" />
+
+	<script cache="false" src="shared_test_json_table.lua" type="shared" />
+	<script cache="false" src="shared_test_json.lua" type="shared" />
+
+	<!--
+	To generate a new test_json.json, include the s_test_json_gen.lua and restart the resource.
+	-->
+	<!--
+	<script src="s_test_json_gen.lua" />
+	-->
+
+	<file src="test_json.json" />
+</meta>

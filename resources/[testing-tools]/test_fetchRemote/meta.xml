@@ -1,0 +1,21 @@
+<!--
+Copyright 2023 Multi Theft Auto
+Use of this source code is governed by the license that can be
+found in the LICENSE file.
+-->
+
+<meta>
+	<meta name="test_fetchRemote" version="1.2.0" author="Multi Theft Auto" type="script" />
+
+	<min_mta_version server="1.5.4-9.11413" />
+
+	<script src="shared_test_fetchRemote.lua" type="shared" cache="false" />
+	<script src="s_test_fetchRemote.lua" />
+	<script src="c_test_fetchRemote.lua" type="client" cache="false" />
+
+	<file src="test_fetchRemote.png" />
+
+	<aclrequest>
+		<right name="function.fetchRemote" access="true" />
+	</aclrequest>
+</meta>

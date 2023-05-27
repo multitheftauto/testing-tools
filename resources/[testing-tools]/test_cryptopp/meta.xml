@@ -1,0 +1,11 @@
+<!--
+Copyright 2023 Multi Theft Auto
+Use of this source code is governed by the license that can be
+found in the LICENSE file.
+-->
+
+<meta>
+	<meta author="Multi Theft Auto" name="test_cryptopp" type="script" version="1.1.0" />
+
+	<script cache="false" src="shared_test_cryptopp.lua" type="shared" />
+</meta>
